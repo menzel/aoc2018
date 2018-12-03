@@ -1,0 +1,5 @@
+#vim
+:%s/\n//g
+gg
+x
+:w !bc 
