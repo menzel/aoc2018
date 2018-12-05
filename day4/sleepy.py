@@ -33,13 +33,13 @@ with open("input.txt") as fp:
                 ts += timedelta(days=1)
 
             foo = insert + str(lastguard) + "','" + ts.strftime("%Y-%m-%d")+ "',"  + ",".join(["0" for _ in range(60)])  + ");"
-            #print(foo)
+            print(foo)
             curs.execute(foo)
 
         elif "wakes" in line:
                 cmd = ",".join(["`"+str(x)+"`=1" for x in range(start.minute,ts.minute)])
                 foo = update + cmd + " WHERE `guardid` = " + str(lastguard) + " AND `date` = '" + ts.strftime("%Y-%m-%d") + "';"
-                #nprint(foo)
+                print(foo)
                 curs.execute(foo)
 
         elif "falls" in line:
@@ -53,19 +53,20 @@ guardlist = list(curs.execute("SELECT DISTINCT guardid FROM guards;"))
 for g in guardlist:
     s = "SELECT " + ",".join(["sum(`"+str(x)+"`)" for x in range(60)]) + " FROM guards where `guardid` = " + str(g[0]) + " GrOUp By `guardid`;"
     
-    print("guard: " + str(g[0]),end=" ")
+    #print("guard: " + str(g[0]),end=" ")
     for m in list(curs.execute(s)):
-        print(m,end="")
-    print()
+        print(s)
+        #print(m,end="")
+    #print()
 
 
 
-for g in guardlist:
-    s = "SELECT MAX(" + ",".join(["sum(`"+str(x)+"`)" for x in range(60)]) + ") FROM guards where `guardid` = " + str(g[0]) + " GROUP BY `guardid`;"
-    
-    print("guard: " + str(g[0]),end=" ")
-    for m in list(curs.execute(s)):
-        print(m,end="")
-    print()
-
+#for g in guardlist:
+#    s = "SELECT MAX(" + ",".join(["sum(`"+str(x)+"`)" for x in range(60)]) + ") FROM guards where `guardid` = " + str(g[0]) + " GROUP BY `guardid`;"
+#    
+#    print("guard: " + str(g[0]),end=" ")
+#    for m in list(curs.execute(s)):
+#        print(m,end="")
+#    print()
+#
 #  python sleepy.py  | grep 947  | tr "," "\n" | grep -En "."
