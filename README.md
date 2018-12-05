@@ -1,10 +1,10 @@
 # advent of code 2018
 
-* Day 1 (Finding repeats) : vim/bc | Fortran
-* Day 2 (Checksums) : Freebasic | Freebasic
-* Day 3 (Patch overlap) : Rust | Rust
-* Day 4 (Sleeping guards) : SQL | SQL
-* Day 5 (Polymer reactions) : Lisp | Lisp
+* Day 1 (Finding repeats) : Fortran
+* Day 2 (Checksums) : Freebasic
+* Day 3 (Patch overlap) : Rust
+* Day 4 (Sleeping guards) : SQL
+* Day 5 (Polymer reactions) : Lisp
 * Day 6
 * Day 7
 * Day 8
