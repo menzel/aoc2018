@@ -2,8 +2,8 @@
 
 * Day 1: Finding repeats (vim/bc | Fortran)
 * Day 2: Freebasic | Freebasic
-* Day 3:
-* Day 4:
+* Day 3: Rust | Rust
+* Day 4: SQL | SQL
 * Day 5:
 * Day 6:
 * Day 7:
