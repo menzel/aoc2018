@@ -41,7 +41,7 @@ function nearest($grid, $letters, $i, $j){
 # Build Grid 
 #################
 
-$size = 1000;
+$size = 12;
 $grid = array_fill(0,$size,array_fill(0,$size,'.'));
 $letterpos;
 
@@ -49,7 +49,7 @@ $alphas = array_merge(range('A', 'Z'), range('a', 'z'));
 $c = 0;
 
 
-if ($file = fopen("input", "r")) {
+if ($file = fopen("small", "r")) {
     while(!feof($file)) {
         $parts = explode(", ",fgets($file)); 
 
@@ -93,6 +93,8 @@ for($i = 0; $i < $size; $i++){
     } 
 }
 
+printgrid($grid); 
+
 #################
 # Remove letters that are in $todelete
 #################
@@ -119,7 +121,7 @@ for($i = 0; $i < $size; $i++){
     }
 }
 
-#printgrid($grid); 
+printgrid($grid); 
 
 asort($result);
 print_r($result);
