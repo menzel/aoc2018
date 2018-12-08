@@ -5,8 +5,8 @@
 * Day 3 (Patch overlap) : Rust
 * Day 4 (Sleeping guards) : SQL
 * Day 5 (Polymer reactions) : Lisp
-* Day 6 (Distance Grid) : PHP
-* Day 7
+* Day 6 (Distance grid) : PHP
+* Day 7 (Graph order) : Ruby
 * Day 8
 * Day 9
 * Day 10
