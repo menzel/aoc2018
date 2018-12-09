@@ -7,7 +7,7 @@
 * Day 5 (Polymer reactions) : Lisp
 * Day 6 (Distance grid) : PHP
 * Day 7 (Graph order) : Ruby
-* Day 8
+* Day 8 (Metadata tree) : Lua
 * Day 9
 * Day 10
 * Day 11
