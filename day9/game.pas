@@ -1,10 +1,10 @@
 program MarbleGame; 
 
 const
-    size : longint = 715880;
+    size : longint = 7158801;
     playerc: longint = 430;
 type
-  Circles = array[0..715880] of longint;
+  Circles = array[0..7158801] of longint;
 
 function insertval(value: longint; position: longint; var arr: Array of longint): Circles;
 
