@@ -10,7 +10,7 @@
 * Day 8 (Metadata tree) : Lua
 * Day 9 (Marble Game) : Pascal
 * Day 10 (Particle Message) : Kotlin
-* Day 11
+* Day 11 (Power Grid) : Groovy
 * Day 12
 * Day 13
 * Day 14
