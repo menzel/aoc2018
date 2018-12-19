@@ -11,7 +11,7 @@
 * Day 9 (Marble Game) : Pascal
 * Day 10 (Particle Message) : Kotlin
 * Day 11 (Power Grid) : Groovy
-* Day 12
+* Day 12 (Wolframs Flowerpots) : Haskell
 * Day 13
 * Day 14
 * Day 15
